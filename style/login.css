@@ -1,0 +1,54 @@
+body {
+    background: #000000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    /* 100vh faz com que fique com 100% do tamanho do body */
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    /* se a flex-direction for row, necessário utlizar align-items. Isso altera por causa do eixo */
+}
+
+/* Quem está assistindo? */
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 70px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.perfis {
+    display: flex;
+    justify-content: center;
+    /* gap faz com que o espaçamento entre os items aumente */
+    gap: 160px;
+}
+
+.perfis a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    text-decoration: none;
+    line-height: 47px;
+    color: #FFFFFF;
+}
+
+.perfis a h2 {
+    text-align: center;
+    font-weight: 100;
+}
+
+.perfis a img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
